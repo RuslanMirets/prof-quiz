@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./css/app.css" />
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.4.min.js"
+			integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+			crossorigin="anonymous"
+			defer
+		></script>
+		<script src="./js/app.js" defer></script>
+
+		<title>Опросник</title>
+	</head>
+	<body>
+		<section class="section">
+			<h1>Опросник</h1>
+			<div class="items">
+				<form class="form" name="quizForm">
+					<div class="item active">
+						<h3>Начать</h3>
+						<button class="next active" type="button">Next</button>
+					</div>
+					<div class="item">
+						<h3>Вопрос 1</h3>
+						<label>
+							<input class="quiz__radio" name="q1" value="1" type="radio" />
+							a) Программист
+						</label>
+						<label>
+							<input class="quiz__radio" name="q1" value="2" type="radio" />
+							b) Художник
+						</label>
+						<label>
+							<input class="quiz__radio" name="q1" value="3" type="radio" />
+							c) Сварщик
+						</label>
+						<button class="prev" type="button">Prev</button>
+						<button class="next" type="button">Next</button>
+					</div>
+					<div class="item">
+						<h3>Вопрос 2</h3>
+						<label>
+							<input class="quiz__radio" name="q2" value="1" type="radio" />
+							a) Программист
+						</label>
+						<label>
+							<input class="quiz__radio" name="q2" value="2" type="radio" />
+							b) Художник
+						</label>
+						<label>
+							<input class="quiz__radio" name="q2" value="3" type="radio" />
+							c) Сварщик
+						</label>
+						<button class="prev" type="button">Prev</button>
+						<button class="next" type="button">Next</button>
+					</div>
+					<div class="item">
+						<h3>Вопрос 3</h3>
+						<label>
+							<input class="quiz__radio" name="q3" value="1" type="radio" />
+							a) Программист
+						</label>
+						<label>
+							<input class="quiz__radio" name="q3" value="2" type="radio" />
+							b) Художник
+						</label>
+						<label>
+							<input class="quiz__radio" name="q3" value="3" type="radio" />
+							c) Сварщик
+						</label>
+						<button class="prev" type="button">Prev</button>
+						<button class="next" type="button">Next</button>
+					</div>
+					<div class="item-result item-result--1">
+						<h3>Спасибо 1</h3>
+						<p>
+							Тест показал, что вы 2D-художник на
+							<span class="result-quiz__percent"></span>%. Вы можете
+							зарабатывать, создавая концепты и иллюстрации для игр и
+							мультфильмов, кино и книг.
+						</p>
+					</div>
+					<div class="item-result item-result--2">
+						<h3>Спасибо 2</h3>
+						<p>
+							Тест показал, что вы 3D-художник на
+							<span class="result-quiz__percent"></span>%. Вы можете
+							зарабатывать, создавая 3D-модели и текстуры к ним. Эти навыки
+							нужны в сферах игр, мультфильмов и кино.
+						</p>
+					</div>
+					<div class="item-result item-result--3">
+						<h3>Спасибо 3</h3>
+						<p>
+							Тест показал, что в игровой индустрии вы могли бы стать художником
+							локаций в Unreal Engine, индивидуальным разработчиком или
+							аниматором с вероятностью в
+							<span class="result-quiz__percent"></span>%
+						</p>
+					</div>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>
